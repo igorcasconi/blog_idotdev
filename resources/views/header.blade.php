@@ -68,11 +68,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             <br/>
                         </ul>
                     </div>
-                    <form>
-                        <div class="search-text">
-                            <input type="text" class="form-control" id="" placeholder="Buscar Artigo">
+                    <form id="form_search"  method="post" action="{{route('search_article')}}">
+                        <div class=" input-group search-text">
+                            <input type="text" class="form-control" id="text_search" name="text_search" placeholder="Buscar Artigo">
+                            <div class="input-group-append">
+                                <button type="submit" class="btn btn-primary sm-2"><i class="fa fa-search"></i></button>
+                            </div>
                         </div>
-                        <a href="#" class="btn btn-primary sm-2 button-search"><i class="fa fa-search"></i></a>
+
+                        @csrf
                     </form>
                 </nav>
             </div>

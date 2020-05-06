@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('/articles/{id}', 'ArticlesController@articles_list')->name('articles');
 Route::get('/articles/{id}/{url_art}', 'ArticlesController@article_item')->name('article_item');
-Route::get('/articles/search={text_search}','ArticlesController@search_article')->name('search_article');
+Route::post('/articles/search','ArticlesController@search_article')->name('search_article');
 
 //SISTEMA
 Auth::routes();

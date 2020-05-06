@@ -37,15 +37,19 @@ class ArticlesController extends Controller
 
     public function search_article(Request $request) {
 
+        $text = $request->text_search;
+
         if (empty($request->text_search)){
-            $find_article = Articles::orderBy('article_date','desc')->get();
+            $find_article = Articles::where('article_active',1)->orderBy('article_date','desc')->get();
         } else {
-            $find_article = Articles::where('article_title','LIKE',$request->text_search)
-            ->orWhere('article_subtitle','LIKE',$request->text_search)
-            ->orWhere('article_body','LIKE',$request->text_search)->orderBy('article_date','desc')->get();
+            $find_article = Articles::where('article_active',1)->where(function ($query) use ($text){
+            $query->where('article_title','LIKE','%'.$text.'%')
+                ->orWhere('article_subtitle','LIKE','%'.$text.'%')
+                ->orWhere('article_body','LIKE','%'.$text.'%');
+            })->orderBy('article_date','desc')->get();
         }
         $menus = Menu::orderBy('menu_id','asc')->get();
-        return view('articles/article_search',['menus'=>$menus,'find_article'=>$find_article]);
+        return view('articles/article_search',['menus'=>$menus,'find_article'=>$find_article,'text_search'=>$request->text_search]);
 
     }
 }

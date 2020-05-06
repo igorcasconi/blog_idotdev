@@ -7,7 +7,7 @@
             <br/>
             <div class="container-fluid">
                 <form id="form_article" method="post" action="{{route('save_article',$article->article_id)}}">
-
+                    @csrf
                     <div class="form-group">
                         <label for="article_title">Título</label>
                         <input class="form-control form-control-sm" type="text" id="article_title" name="article_title" value="{{$article->article_title}}">
