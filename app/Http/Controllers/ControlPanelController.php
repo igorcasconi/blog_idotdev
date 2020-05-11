@@ -137,4 +137,9 @@ class ControlPanelController extends Controller
 
     }
 
+    public function logout() {
+        auth()->logout();
+        return redirect('/login')->with('logout', 'Logout realizado com sucesso!');
+    }
+
 }

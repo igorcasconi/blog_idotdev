@@ -22,6 +22,7 @@ Route::post('/articles/search','ArticlesController@search_article')->name('searc
 //SISTEMA
 Auth::routes();
 Route::get('/login', 'ControlPanelController@login')->name('login');
+Route::get('/logout', 'ControlPanelController@logout')->name('logout');
 Route::get('/control_panel', 'ControlPanelController@control_panel')->name('control_panel');
 Route::get('/articles_panel', 'ControlPanelController@page_articles')->name('articles_panel');
 Route::get('/new_article', 'ControlPanelController@articles')->name('new_article');

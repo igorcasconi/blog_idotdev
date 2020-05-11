@@ -62,6 +62,18 @@
                         </form>
                     </div>
                 </div>
+                <br/>
+                @if(session()->get('logout'))
+                    <div class="alert alert-success">
+                        {{ session()->get('logout') }}
+                    </div>
+                @endif
+
+                @if(session()->get('errorPassword'))
+                    <div class="alert alert-danger">
+                        {{ session()->get('errorPassword') }}
+                    </div>
+                @endif
             </div>
         </div>
     </div>
