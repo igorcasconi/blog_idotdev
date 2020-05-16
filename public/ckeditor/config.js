@@ -9,5 +9,7 @@ CKEDITOR.editorConfig = function( config ) {
 	config.uiColor = '#3b7aa6';
     // config.extraPlugins = 'imageuploader';
     config.removePlugins = 'save';
+    config.filebrowserUploadUrl = "{{route('upload', ['_token' => csrf_token() ])}}";
+    config.filebrowserUploadMethod = 'form';
 
 };

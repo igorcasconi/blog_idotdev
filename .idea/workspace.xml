@@ -3,14 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="92a3e12a-da46-47df-9b74-d04a1f3a7e34" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/ConfirmPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ConfirmPasswordController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ArticlesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ArticlesController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ControlPanelController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ControlPanelController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ckeditor/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/ckeditor/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control_panel/control_panel.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control_panel/control_panel.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control_panel/edit_article.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control_panel/edit_article.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/control_panel/header_panel.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control_panel/header_panel.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -213,6 +215,11 @@
       <workItem from="1588721297342" duration="5528000" />
       <workItem from="1588804650956" duration="623000" />
       <workItem from="1589197905384" duration="5115000" />
+      <workItem from="1589208896127" duration="4401000" />
+      <workItem from="1589546345702" duration="1717000" />
+      <workItem from="1589550644137" duration="2395000" />
+      <workItem from="1589553755586" duration="327000" />
+      <workItem from="1589667892736" duration="316000" />
     </task>
     <servers />
   </component>

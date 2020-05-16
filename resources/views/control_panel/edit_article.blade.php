@@ -1,6 +1,6 @@
 @extends('control_panel/header_panel')
 @section('conteudo_login')
-    <script src="https://cdn.ckeditor.com/4.13.1/standard/ckeditor.js"></script>
+    <script src="https://cdn.ckeditor.com/4.14.0/standard-all/ckeditor.js"></script>
     <div class="services">
         <div class="container">
             <h3 class="title-module"><i class="fas fa-newspaper"></i> {{ $title }}</h3>
@@ -62,7 +62,56 @@
         CKEDITOR.replace( 'article_body', {
             language: 'pt-BR',
             filebrowserUploadUrl: "{{route('upload', ['_token' => csrf_token() ])}}",
-            filebrowserUploadMethod: 'form'
+            filebrowserUploadMethod: 'form',
+            toolbar: [{
+                name: 'clipboard',
+                items: ['Paste', '-', 'Undo', 'Redo']
+            },
+                {
+                    name: 'basicstyles',
+                    items: ['Bold', 'Italic', 'Underline', 'Strike', 'RemoveFormat', 'Subscript', 'Superscript']
+                },
+                {
+                    name: 'links',
+                    items: ['Link', 'Unlink']
+                },
+                {
+                    name: 'paragraph',
+                    items: ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote']
+                },
+                {
+                    name: 'insert',
+                    items: ['Image', 'Table']
+                },
+                {
+                    name: 'editing',
+                    items: ['Scayt']
+                },
+                '/',
+
+                {
+                    name: 'styles',
+                    items: ['Format', 'Font', 'FontSize']
+                },
+                {
+                    name: 'colors',
+                    items: ['TextColor', 'BGColor', 'CopyFormatting']
+                },
+                {
+                    name: 'align',
+                    items: ['JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock']
+                },
+                {
+                    name: 'document',
+                    items: ['Print', 'Source']
+                }
+            ],
+            extraPlugins: 'colorbutton,font,justify,print,tableresize,liststyle,pastefromgdocs',
+            contentsCss: [
+                'http://cdn.ckeditor.com/4.14.0/full-all/contents.css',
+                'https://ckeditor.com/docs/vendors/4.14.0/ckeditor/assets/css/pastefromgdocs.css'
+            ],
+            bodyClass: 'document-editor',
         });
     </script>
 @endsection

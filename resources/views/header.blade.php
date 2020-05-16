@@ -34,7 +34,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 
     <!-- TAGS -->
-    <META NAME="DESCRIPTION" CONTENT="SQL - Programação web - conteúdos mobile - Experiências em DEV - etc.">
+    <META NAME="DESCRIPTION" CONTENT="Este blog vai tratar sobre desenvolvimento, sobre o que já tive de contato, do que foi
+            necessário em momentos para continuar a produção de software ou execução de tarefas e tudo de conhecimento que eu puder transmitir. -
+            SQL - Programação web - conteúdos mobile - Experiências em DEV - etc.">
     <META NAME="KEYWORDS" CONTENT="SQL,PHP,Ionic,Angular,MySQL,Laravel,CodeIgniter,Cordova,WEB,Programação" >
     <META NAME="DISTRIBUTION" CONTENT="global">
 

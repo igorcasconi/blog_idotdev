@@ -22,7 +22,7 @@ class ControlPanelController extends Controller
     public function control_panel() {
         $visitors = SiteConfig::find(1);
         $total_visitors = $visitors->site_total_visitors;
-        $article_reads = Articles::where('article_read','>', 0)->get();
+        $article_reads = Articles::where('article_read','>', 0)->orderBy('article_read','desc')->limit(3)->get();
         return view('control_panel/control_panel', ['total_visitors'=>$total_visitors,'article_read'=>$article_reads]);
     }
 

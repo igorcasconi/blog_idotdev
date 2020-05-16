@@ -23,7 +23,7 @@
 
 @section('content_header')
 </head>
-<body>
+<body class="background-panel">
     <div class="head-panel">
         <div class="container">
             <nav class="navbar navbar-expand-lg ">

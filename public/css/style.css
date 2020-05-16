@@ -2850,6 +2850,15 @@ copyright-agileinfo {
 
 .article_list_home {
     list-style-type: none;
+    text-align: left !important;
+}
+
+.article_list_home li {
+    margin-bottom: 10px;
+    max-width: 40ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .search-text {
@@ -2862,10 +2871,24 @@ copyright-agileinfo {
     margin-top: 20px;
 }
 
+.list-share {
+    display: inline-flex;
+}
+
+.list-share li {
+    margin-right: 5px;
+    list-style-type: none;
+}
+
+.list-search li {
+    list-style-type: none;
+}
+
+
 /* -- LOGIN -- */
 .login-card {
-    background: rgb(59,122,166);
-    background: linear-gradient(184deg, rgba(59,122,166,1) 16%, rgba(33,63,98,1) 94%);
+    background: rgb(38,38,47);
+    background: linear-gradient(180deg, rgba(38,38,47,1) 33%, rgba(49,65,87,1) 100%);
     color: white;
 }
 
@@ -2875,8 +2898,8 @@ copyright-agileinfo {
 }
 
 .head-panel {
-    background: rgb(59,122,166);
-    background: linear-gradient(184deg, rgba(59,122,166,1) 16%, rgba(33,63,98,1) 94%);
+    background: rgb(38,38,47);
+    background: linear-gradient(180deg, rgba(38,38,47,1) 33%, rgba(49,65,87,1) 100%);
 }
 
 .btn-menu {
@@ -2936,15 +2959,27 @@ copyright-agileinfo {
     cursor: pointer;
 }
 
-.list-share {
-    display: inline-flex;
+.corpo-card {
+    background: rgb(38,38,47);
+    background: linear-gradient(180deg, rgba(38,38,47,1) 33%, rgba(49,65,87,1) 100%);
+    color: white;
 }
 
-.list-share li {
-    margin-right: 5px;
-    list-style-type: none;
+.background-panel {
+    background: rgb(62,62,62);
+    background: linear-gradient(180deg, rgba(62,62,62,1) 25%, rgba(17,17,17,1) 100%);
+    height: 100vh;
 }
 
-.list-search li {
-    list-style-type: none;
+.card-login {
+     border: 0px;
+    transition: all 0.3s;
+ }
+
+.card-login:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+
 }
+

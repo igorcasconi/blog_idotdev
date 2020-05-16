@@ -13,7 +13,7 @@
                         <h3>SQL</h3>
                         <ul class="article_list_home">
                             @foreach($article_sql as $sql)
-                                <li><a href="{{ route('article_item',['id'=>$sql->article_id,'url_art'=>$sql->article_url]) }}">{!! $sql->article_title !!}</a></li>
+                                <li><a href="{{ route('article_item',['id'=>$sql->article_id,'url_art'=>$sql->article_url]) }}">- {!! $sql->article_title !!}</a></li>
                             @endforeach
                         </ul>
                         <a href="{{route('articles','sql')}}" class="botao-link-menu"><i class="fa fa-chevron-circle-right"></i></a>
@@ -28,7 +28,7 @@
                         <h3>WEB</h3>
                         <ul class="article_list_home">
                             @foreach($article_web as $web)
-                                <li><a href="{{ route('article_item',['id'=>$web->article_id,'url_art'=>$web->article_url]) }}">{!! $web->article_title !!}</a></li>
+                                <li><a href="{{ route('article_item',['id'=>$web->article_id,'url_art'=>$web->article_url]) }}">- {!! $web->article_title !!}</a></li>
                             @endforeach
                         </ul>
                         <a href="{{route('articles','php')}}" class="botao-link-menu"><i class="fa fa-chevron-circle-right"></i></a>
@@ -42,7 +42,7 @@
                         <h3>Mobile </h3>
                         <ul class="article_list_home">
                             @foreach($article_mobile as $mobile)
-                                <li><a href="{{ route('article_item',['id'=>$mobile->article_id,'url_art'=>$mobile->article_url]) }}">{!! $mobile->article_title !!}</a></li>
+                                <li><a href="{{ route('article_item',['id'=>$mobile->article_id,'url_art'=>$mobile->article_url]) }}">- {!! $mobile->article_title !!}</a></li>
                             @endforeach
                         </ul>
                         <a href="{{route('articles','mobile')}}" class="botao-link-menu"><i class="fa fa-chevron-circle-right"></i></a>

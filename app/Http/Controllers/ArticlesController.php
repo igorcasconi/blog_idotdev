@@ -19,7 +19,7 @@ class ArticlesController extends Controller
         $menu_id = Menu::where('menu_link',$request->id)->get();
 
         $type_article = DB::table('articles')->join('menus','menu_id','=','article_menu_id')
-        ->where('menu_link',$request->id)->where('article_active',1)->get();
+        ->where('menu_link',$request->id)->where('article_active',1)->orderBy('article_date','desc')->get();
 
         return view('articles/articles_list', ['menus' => $menus, 'type_article' => $type_article, 'menu_id'=>$menu_id]);
 
